@@ -4,12 +4,12 @@
     // Creer une classe crépe:
 
     class Crepe {
-        $lait;
-        $oeuf;
-        $farine;
-        $extraitDeVanille;
-        $beurre;
-        $sel;
+        public $lait;
+        public $oeuf;
+        public $farine;
+        public $extraitDeVanille;
+        public $beurre;
+        public $sel;
     }
 
 

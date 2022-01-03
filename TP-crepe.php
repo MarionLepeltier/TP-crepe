@@ -49,9 +49,13 @@
             echo $this->topping." de fraise. \n";
         }
 
-        // Fonction pour rendre visible les attributs privés.
+        // Get Fonction pour rendre visible les attributs privés.
         public function getTopping(){
             return $this->topping;
+        }
+        // Set Fonction pour modifier la valeur d'un attribut privé
+        public function setTopping($gourmand){
+            return $this->topping = $gourmand;
         }
     }
     

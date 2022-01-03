@@ -8,10 +8,10 @@ require './TP-crepe.php';
 
 // Pour creer un objet on l'apelle en creant une fonction auto new 
 
-
+// On apelle notre classe on ajoute dans l'ordre les valeurs
 $recette = new Crepe("1l", 3, "500gr", "1 cuillère", "200gr", "1 pincée", "Confiture");
 
-
-var_dump($recette);
-
+// On appelle la fonction
+$recette-> afficher_recette();
+$recette-> topping;
 ?>

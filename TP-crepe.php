@@ -16,7 +16,7 @@
         public $extraitDeVanille;
         public $beurre;
         public $sel;
-        public $topping;
+        private $topping;
 
 
         // Fonction constructeur obligé dans une classe, le faire pour chaque attribut
@@ -36,7 +36,23 @@
         }
         // Fin de la fonction construct
 
-        
+        // Creer une fonction qui affiche les ingrédients
+
+        public function afficher_recette(){
+            echo "Pour faire des crêpes il vous faut : \n";
+            echo $this->lait." de lait. \n";
+            echo $this->oeuf." oeufs. \n";
+            echo $this->farine." de farine. \n";
+            echo $this->extraitDeVanille." d'extrait de vanille. \n";
+            echo $this->beurre." de beurre. \n";
+            echo $this->sel." de sel. \n";
+            echo $this->topping." de fraise. \n";
+        }
+
+        // Fonction pour rendre visible les attributs privés.
+        public function getTopping(){
+            return $this->topping;
+        }
     }
     
     

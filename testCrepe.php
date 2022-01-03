@@ -28,7 +28,7 @@
 
 
     // Fonction removeTopping
-    $recette->removeTopping("sucre");
+    $recette->removeTopping("Confiture");
     var_dump($recette)
 
 ?>

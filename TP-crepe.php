@@ -64,8 +64,8 @@
         }
 
         // Fonction retirer un element de la liste de topping
-        public function removeTopping(){
-            unset($this->topping[1]);
+        public function removeTopping($value){
+            unset($this->topping[array_search($value, $this->topping)]);
         }
 
     }

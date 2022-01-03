@@ -62,6 +62,12 @@
         public function addTopping($newTopping){
             array_push($this->topping, "$newTopping");
         }
+
+        // Fonction retirer un element de la liste de topping
+        public function removeTopping(){
+            unset($this->topping[1]);
+        }
+
     }
     
     

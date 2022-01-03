@@ -20,7 +20,7 @@
 
 
         // Fonction constructeur obligé dans une classe, le faire pour chaque attribut
-        // Il sert a creer un objet crépe espace underscore construct
+        // Il sert a creer un objet crépe espace 2 underscore construct
         public function __construct(
             // Paramétres qui sont les attributs de votre classe, une virgule entre chaque.
             $ingredient1,$ingredient2,$ingredient3,$ingredient4,$ingredient5,$ingredient6,$ingredient7
@@ -36,10 +36,7 @@
         }
         // Fin de la fonction construct
 
-        public function ingredients(){
-            echo "Pour faire des crêpes il vous faut : \n
-            - $lait 1L ";
-        }
+        
     }
     
     

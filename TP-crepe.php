@@ -39,14 +39,14 @@
         // Creer une fonction qui affiche les ingrédients
 
         public function afficher_recette(){
-            echo "Pour faire des crêpes il vous faut : \n";
-            echo $this->lait." de lait. \n";
-            echo $this->oeuf." oeufs. \n";
-            echo $this->farine." de farine. \n";
-            echo $this->extraitDeVanille." d'extrait de vanille. \n";
-            echo $this->beurre." de beurre. \n";
-            echo $this->sel." de sel. \n";
-            echo $this->topping." de fraise. \n";
+            echo "Pour faire des crêpes il vous faut : \n -";
+            echo $this->lait." de lait. \n -";
+            echo $this->oeuf." oeufs. \n -";
+            echo $this->farine." de farine. \n -";
+            echo $this->extraitDeVanille." d'extrait de vanille. \n -";
+            echo $this->beurre." de beurre. \n -";
+            echo $this->sel." de sel. \n -";
+            // echo $this->topping." de fraise. \n";
         }
 
         // Get Fonction pour rendre visible les attributs privés.
@@ -56,6 +56,11 @@
         // Set Fonction pour modifier la valeur d'un attribut privé
         public function setTopping($gourmand){
             return $this->topping = $gourmand;
+        }
+
+        // Fonction pour ajouter un topping
+        public function addTopping($newTopping){
+            array_push($this->topping, "$newTopping");
         }
     }
     
